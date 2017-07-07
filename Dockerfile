@@ -5,4 +5,5 @@ FROM nothingdocker/centos-node
 #RUN npm install -g node-gyp
 RUN npm install -g --unsafe-perm sinopia
 
-
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/usr/sbin/init"]
